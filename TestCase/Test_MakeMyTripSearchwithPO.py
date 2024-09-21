@@ -77,4 +77,4 @@ class Test_MakeMytrip(Browser):
         exepcetedsamecityerror = "From & To airports cannot be the same"
         actualdssmrcityerror = sp.ValidatesamecityError(self.browser)
         assert exepcetedsamecityerror == actualdssmrcityerror
-        Browser.Close_Browser(self)
+        Browser.Close_Browser(self);
