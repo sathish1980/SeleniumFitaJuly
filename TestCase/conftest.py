@@ -27,3 +27,11 @@ def password():
 @pytest.fixture
 def username():
     return "kumar.sathish189@gmail.com"
+
+@pytest.fixture()
+def ValidSearch():
+    return ["PNQ", "MAA", "24"]
+
+@pytest.fixture(params=[("MAA", "BLR", "24"), ("PNQ", "MAA", "27")])
+def SearchWithMultiDate(request):
+    return request.param
