@@ -32,6 +32,6 @@ def username():
 def ValidSearch():
     return ["PNQ", "MAA", "24"]
 
-@pytest.fixture(params=[("MAA", "BLR", "24"), ("PNQ", "MAA", "27")])
+@pytest.fixture(params=[("MAA", "BLR", "24"), ("PNQ", "MAA", "27"),("BOM", "MAA", "27")])
 def SearchWithMultiDate(request):
     return request.param
